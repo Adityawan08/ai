@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME</title>
+        <style>
+            p{
+                background-color: bisque;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+                text-align: center;
+            }
+
+            label{
+                font-family: Arial, Helvetica, sans-serif;
+                display: block;
+                font-size: medium;
+            }
+
+            input{
+                display: block;
+                margin-top: 10px;
+                width: 40%;
+                border-radius: 5px;
+                padding: 5px 5px 5px 25px;
+            }
+
+            button{
+                width: 100px;
+                height: 25px;
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                color: aliceblue;
+                background-color: green;
+                border: 0px;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web AI Gemini</h1>
+        <form method="post" action="/geminiAi">
+            <label><b>Pertanyaan Anda</b></label>
+            <input type="text" name="Pertanyaan">
+            <button type="submit">Submit</button>
+        </form>
+        <p>{{jawaban}}</p>
+        <p>hasil screaping: {{data}}</p>
+    </body>
+</html>
